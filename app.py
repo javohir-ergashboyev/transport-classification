@@ -3,8 +3,8 @@ from fastai.vision.all import *
 import pathlib
 import plotly.express as px
 import platform
-plt=platform.system()
-pathlib.WindowsPath=pathlib.PosixPath
+plt = platform.system()
+if plt == 'Linux': pathlib.WindowsPath = pathlib.PosixPath
 st.title('Transport classification model')
 file=st.file_uploader('Upload Picture', type=['png','jpeg', 'svg', 'gif'])
 if file:
