@@ -4,7 +4,7 @@ import pathlib
 import plotly.express as px
 temp=pathlib.PosixPath
 pathlib.PosixPath=pathlib.WindowsPath
-st.title('Transportni classifikatsiya qiluvchi model')
+st.title('Transport classification model')
 file=st.file_uploader('Upload Picture', type=['png','jpeg', 'svg', 'gif'])
 if file:
     st.image(file)
